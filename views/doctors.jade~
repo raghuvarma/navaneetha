@@ -1,0 +1,12 @@
+extends layout
+
+block content
+
+  h1.page_heading Doctors
+
+  ul.users-list
+   - each user in doctors
+    li  User Id: #{user.id}
+    li  User Name: #{user.name}
+    li  User Role: #{user.role}
+    hr(style="width:150px; float:left;")

@@ -1,0 +1,15 @@
+extends layout
+
+block content
+
+  h1.page_heading Add New User
+
+  form(method="POST", class="new-user-form" , action="/users")
+   p Id:
+     input#id(type="text" , name="id")
+   p Name:
+     input#name(type="text" , name="name")
+   p Role:
+     input#role(type="text" , name="role")
+ 
+   p: button(type="submit") Add New User

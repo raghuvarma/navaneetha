@@ -1,0 +1,10 @@
+extends layout
+
+block content
+
+  h1.page_heading Contact-Us
+
+  ul.contact-address
+    li Navaneetha Free Homeo Hospital,
+    li Gudilova, Anandapuram(mandalem),
+    li Visakhapatnam(A.P)-530052.

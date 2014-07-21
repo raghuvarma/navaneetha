@@ -1,0 +1,17 @@
+extends layout
+
+block content
+
+  h1.page_heading All Users
+
+  ul.users-list
+   - each user in users
+    li  User Id: #{user.id}
+    li  User Name: #{user.name}
+    li  User Role: #{user.role}
+    hr(style="width:150px; float:left;")
+    br
+
+  a(href="users/new") Add New User
+  br 
+  a(href="/") Home
