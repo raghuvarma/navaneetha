@@ -10,6 +10,9 @@ block content
    p Name:
      input#name(type="text" , name="name")
    p Role:
-     input#role(type="text" , name="role")
+     select#chooselang(name='role')
+       option(value='admin') Admin
+       option(value='manager') Manager
+       option(value='patient', selected='') Patient
  
    p: button(type="submit") Add New User
